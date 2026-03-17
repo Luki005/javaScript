@@ -1,20 +1,44 @@
 <!DOCTYPE html>
 <html lang="hu">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>js gyak</title>
     <style>
-       body{
-
-       }
+        body {
+            color: rgb(151, 151, 0);
+        }
     </style>
 
-     <link rel="stylesheet" href="style.css">
-    <script></script>
+    <link rel="stylesheet" href="main.css">
+   
 </head>
+
 <body>
     <h1>Js Gyak.</h1>
     <p>Ez egy JavaScript gyakorlat lesz.</p>
+    <hr />
+    <div class="menuStilus">
+        <a href="https://www.metropolitan.hu/hu" target="_blank"> metu </a>
+        <a href="https://mome.hu/hu/" target="_blank"> mome </a>
+        <a href="https://uni-bge.hu/" target="_blank"> bge </a>
+        <a href="https://www.bme.hu/" target="_blank"> bme </a>
+    </div>
+    <hr />
+    <div id="gombok">
+        <button id="helloGomb">helloGomb </button>
+    </div>
+
+    <script>
+
+        var helloGombFuggveny = function(){
+           alert("hi");
+        }
+        var gombForras = document.getElementById("helloGomb");
+        gombForras.onclick=helloGombFuggveny;
+    </script>
+
 </body>
+
 </html>
