@@ -66,10 +66,10 @@ body {
     background: white;
     padding: 1rem 1.5rem;
     border-radius: 10px;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
 
     /* --- FELADAT: írd ide a flexbox-ot --- */
-
+display: flex; justify-content: space-between; align-items: center;
 
 }
 
@@ -81,9 +81,11 @@ body {
 .nav-lista {
     list-style: none;
 
+
     /* --- FELADAT: a linkek legyenek egymás MELLETT --- */
     /* Tipp: display: flex; gap: 1rem; */
-
+  display: flex;
+    gap: 1rem;
 
 }
 
@@ -112,7 +114,8 @@ body {
 .kartya-sor {
 
     /* --- FELADAT: írd ide a flexbox-ot --- */
-
+    display: flex;
+    gap: 1rem;
 
 }
 
@@ -120,9 +123,9 @@ body {
     background: white;
     padding: 1.5rem;
     border-radius: 10px;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
-
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
     /* --- FELADAT: adj hozzá flex: 1 --- */
+    flex: 1;
 
 
 }
@@ -151,10 +154,9 @@ body {
     background: white;
     padding: 1.5rem;
     border-radius: 10px;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
-
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
     /* --- FELADAT: írd ide a flexbox-ot --- */
-
+    display: flex; align-items: center; gap: 1.5rem;
 
 }
 
@@ -166,7 +168,7 @@ body {
 
     /* --- FELADAT: adj hozzá flex-shrink: 0 --- */
     /* (hogy ne zsugorodjon össze) */
-
+flex-shrink: 0;
 }
 
 .profil-nev {
@@ -201,11 +203,12 @@ body {
     border-radius: 10px;
 
     /* --- FELADAT: írd ide a flexbox-ot --- */
-
+display: flex; justify-content: space-between;
 
 }
 
-.lablec-bal, .lablec-jobb {
+.lablec-bal,
+.lablec-jobb {
     font-size: 0.85rem;
 }
 
@@ -218,7 +221,7 @@ body {
     background: white;
     padding: 1.5rem;
     border-radius: 10px;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
     margin-bottom: 1rem;
 }
 

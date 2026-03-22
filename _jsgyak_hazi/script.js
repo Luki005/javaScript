@@ -25,7 +25,7 @@ console.log("Nyisd meg a konzolt: F12 → Console tab");
 //  Példa: console.log("Kiss Anna");
 
 // --- IDE ÍRD ---
-
+console.log("Biró Lukács");
 
 
 
@@ -50,7 +50,7 @@ gomb1.onclick = function() {
     // Példa: szoveg1.textContent = "Megváltoztam!";
 
     // --- IDE ÍRD ---
-
+szoveg1.textContent = "Sikeresen megnyomtad a gombot"
 
 };
 
@@ -73,7 +73,7 @@ gomb2.onclick = function() {
     // --- FELADAT: változtasd meg a szinesdoboz háttérszínét ---
 
     // --- IDE ÍRD ---
-
+szinesdoboz.style.backgroundColor = "lightgreen";
 
 };
 
@@ -100,16 +100,16 @@ gombPlus.onclick = function() {
     // --- FELADAT: növeld az értéket 1-gyel és jelenítsd meg ---
 
     // --- IDE ÍRD ---
-
-
+ertek = ertek + 1;
+szamlaloElem.textContent = ertek;
 };
 
 gombMinus.onclick = function() {
     // --- FELADAT: csökkentsd az értéket 1-gyel és jelenítsd meg ---
 
     // --- IDE ÍRD ---
-
-
+ertek = ertek -1;
+szamlaloElem.textContent = ertek;
 };
 
 
@@ -134,6 +134,11 @@ gombHozzaad.onclick = function() {
     // --- FELADAT: olvasd ki a nevet és add hozzá a listához ---
 
     // --- IDE ÍRD ---
+nevInput.value;
+document.createElement("li")
+li.textContent = nevInput.value;
+nevLista.appendChild(li);
+nevInput.value = "";
 
 
 };
@@ -159,7 +164,11 @@ gombToggle.onclick = function() {
     // --- FELADAT: ha látszik → rejtsd el, ha rejtett → mutasd meg ---
 
     // --- IDE ÍRD ---
-
+if (elem.style.display === "none") {
+    elem.style.display = "block";
+} else {
+    elem.style.display = "none";
+    }
 
 };
 
