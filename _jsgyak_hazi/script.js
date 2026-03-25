@@ -135,7 +135,7 @@ gombHozzaad.onclick = function() {
 
     // --- IDE ÍRD ---
 nevInput.value;
-document.createElement("li")
+var li = document.createElement("li");
 li.textContent = nevInput.value;
 nevLista.appendChild(li);
 nevInput.value = "";
@@ -164,10 +164,10 @@ gombToggle.onclick = function() {
     // --- FELADAT: ha látszik → rejtsd el, ha rejtett → mutasd meg ---
 
     // --- IDE ÍRD ---
-if (elem.style.display === "none") {
-    elem.style.display = "block";
+if (rejtettSzoveg.style.display === "none") {
+    rejtettSzoveg.style.display = "block";
 } else {
-    elem.style.display = "none";
+    rejtettSzoveg.style.display = "none";
     }
 
 };
